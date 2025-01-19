@@ -15,7 +15,7 @@ const AddCourse = () => {
     const config = { headers: { 'Authorization': `Bearer ${token}` } };
     try {
       const newCourse = { name, description, instructor };
-      await axios.post('http://localhost:5000/api/courses', newCourse, config);
+      await axios.post('https://captico.onrender.com/api/courses', newCourse, config);
       navigate('/courses');  
     } catch (error) {
       console.error('Error adding course', error);

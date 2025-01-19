@@ -13,7 +13,7 @@ const CourseList = () => {
       const token = localStorage.getItem('token');
       const config = { headers: { 'Authorization': `Bearer ${token}` } };
       try {
-        const response = await axios.get('http://localhost:5000/api/courses', config);
+        const response = await axios.get('https://captico.onrender.com/api/courses', config);
         console.log('Response Data:', response.data);
         if (Array.isArray(response.data.courses)) {
           setCourses(response.data.courses);
@@ -38,7 +38,7 @@ const CourseList = () => {
     const token = localStorage.getItem('token');
     const config = { headers: { 'Authorization': `Bearer ${token}` } };
     try {
-      await axios.delete(`http://localhost:5000/api/courses/${id}`, config);
+      await axios.delete(`https://captico.onrender.com/api/courses/${id}`, config);
       setCourses(courses.filter(course => course._id !== id));
     } catch (error) {
       setError('Failed to delete course');

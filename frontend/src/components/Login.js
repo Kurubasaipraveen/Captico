@@ -20,7 +20,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/users/login', formData);
+      const response = await axios.post('https://captico.onrender.com/api/users/login', formData);
       localStorage.setItem('token', response.data.token);  
       navigate('/courses');  
     } catch (error) {

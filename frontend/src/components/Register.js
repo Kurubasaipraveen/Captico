@@ -26,7 +26,7 @@ const Register = () => {
       return;
     }
     try {
-      const res = await axios.post('http://localhost:5000/api/users/register', formData);
+      const res = await axios.post('https://captico.onrender.com/api/users/register', formData);
       alert('Registration Successful!');
       localStorage.setItem('token', res.data.token); 
       navigate('/');

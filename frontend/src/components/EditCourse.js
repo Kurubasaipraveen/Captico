@@ -13,7 +13,7 @@ const EditCourse = () => {
       const token = localStorage.getItem('token');
       const config = { headers: { 'Authorization': `Bearer ${token}` } };
       try {
-        const response = await axios.get(`http://localhost:5000/api/courses/${id}`, config);
+        const response = await axios.get(`https://captico.onrender.com/api/courses/${id}`, config);
         setCourse(response.data);
       } catch (error) {
         console.error('Error fetching course', error);
@@ -27,7 +27,7 @@ const EditCourse = () => {
     const token = localStorage.getItem('token');
     const config = { headers: { 'Authorization': `Bearer ${token}` } };
     try {
-      await axios.put(`http://localhost:5000/api/courses/${id}`, course, config);
+      await axios.put(`https://captico.onrender.com/api/courses/${id}`, course, config);
       navigate('/courses');
     } catch (error) {
       console.error('Error editing course', error);
