@@ -23,11 +23,8 @@ Open your browser and navigate to http://localhost:3000
 
 Features
 CRUD Operations: Add, Edit, Delete branches
-Excel Import/Export: Import and export branch data using Excel
-Search: Search for branches based on name, location, etc.
-Sorting: Sort the list of branches by various criteria
 Pagination: Display branches in a paginated manner
-View Toggles: Toggle between different branch views (e.g., grid/list view)
+View Toggles: Toggle between different branch views 
 Responsive UI: Optimized for all screen sizes
 Technologies Used
 Frontend: React.js,  CSS
