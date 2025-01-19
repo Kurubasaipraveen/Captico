@@ -1,0 +1,70 @@
+
+.courses-container {
+    
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .courses-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .courses-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .courses-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  .course-item {
+    background-color: #fff;
+    padding: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .course-item p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+  }
+  
+  .course-item .actions {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+  
+  .course-item .actions button {
+    margin-right: 10px;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  .LogoutBtn{
+    margin-right: 200px;
+  }
